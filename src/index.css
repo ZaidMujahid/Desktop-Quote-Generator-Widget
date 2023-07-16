@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Hanken+Grotesk:wght@500;600;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Manrope:wght@800&family=Montserrat:wght@500;700&family=Open+Sans:ital@1&family=Overpass:wght@400;700&family=Quicksand:wght@400;500;600;700&family=Roboto+Slab:wght@300&display=swap');
+
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+  -webkit-app-region: drag;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--very-dark-blue);
+  -webkit-user-select: none;
+  user-select: none;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: .3em 1em;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+main:hover{
+  border-radius: 10px;
+  #close{
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .dice{
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+.container:hover{
+  box-shadow: .5px .5px 1px #fff;
+}
+
+p {
+  color: rgb(173, 172, 172);
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: .1rem;
+}
+
+h2 {
+  -webkit-app-region: no-drag;
+  color: var(--light-cyan);
+  margin: 0;
+}
+
+.divider {
+  height: 10px;
+  margin-bottom: 1em
+}
+
+button {
+  color: var(--very-dark-blue);
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 10px;
+  font-family: 'Manrope', sans-serif;
+  border-style: none;
+  -webkit-app-region: no-drag;
+  opacity: 0;
+}
+
+button:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+button:focus {
+  border-style: none;
+}
+
+#close {
+  -webkit-app-region: no-drag;
+  justify-self: flex-end;
+  align-self: flex-end;
+  color: #fff;
+  opacity: 0;
+}
+#close:hover{
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+@media screen and (max-width: 650px) {
+  .container {
+    width: auto;
+    margin: 0 2em;
+  }
+}
