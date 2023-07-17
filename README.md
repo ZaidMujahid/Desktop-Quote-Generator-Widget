@@ -1,3 +1,5 @@
+![DesktopWidget](https://github.com/ZaidMujahid/Desktop-Quote-Generator-Widget/assets/89090882/6f9df088-6317-43b4-8ed3-55bf74b73e64)
+
 # Desktop-Quote-Generator-Widget
 
 Destop Quote Generator is a desktop application that generates different quotes using data from the "https://type.fit/api/quotes" API. It provides an easy way to display inspiring quotes on your desktop.
