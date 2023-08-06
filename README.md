@@ -2,11 +2,11 @@
 
 # Desktop-Quote-Generator-Widget
 
-Destop Quote Generator is a desktop application that generates different quotes using data from the "https://type.fit/api/quotes" API. It provides an easy way to display inspiring quotes on your desktop.
+Destop Quote Generator is a desktop application that generates different quotes using data from the "https://zenquotes.io/api/random" API. It provides an easy way to display inspiring quotes on your desktop.
 
 ## Features
 
-- Fetches quotes from the "https://type.fit/api/quotes" API
+- Fetches quotes from the "https://zenquotes.io/api/random" API
 - Displays a new quote on the desktop widget every 2hrs or you can update it manually.
 - Easy installation and setup
 
@@ -15,7 +15,7 @@ Destop Quote Generator is a desktop application that generates different quotes 
 To run the Widget Name application on your desktop, follow these steps:
 
 1. Clone the repository:
-git clone https://github.com/your-username/widget-name.git
+git clone https://github.com/ZaidMujahid/Desktop-Quote-Generator-Widget
 
 2. Navigate to the project directory:
 cd quotewidget
