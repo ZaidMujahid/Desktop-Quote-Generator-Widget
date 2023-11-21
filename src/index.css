@@ -66,6 +66,7 @@ h2 {
   -webkit-app-region: no-drag;
   color: var(--light-cyan);
   margin: 0;
+  font-size: 1.1rem;
 }
 
 .divider {
@@ -84,6 +85,7 @@ button {
   border-style: none;
   -webkit-app-region: no-drag;
   opacity: 0;
+  font-size: 1rem;
 }
 
 button:hover {
@@ -102,6 +104,7 @@ button:focus {
   align-self: flex-end;
   color: #fff;
   opacity: 0;
+  font-size: 1rem;
 }
 #close:hover{
   cursor: pointer;

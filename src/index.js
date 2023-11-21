@@ -9,7 +9,8 @@ if (require('electron-squirrel-startup')) {
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 400,
+    type: 'menu',
+    width: 500,
     height: 250,
     frame: false,
     transparent: true,
@@ -21,7 +22,7 @@ const createWindow = () => {
   });
   
   ipcMain.on("close-app", ()=> app.quit())
-  mainWindow.setPosition(0,0)
+  // mainWindow.setPosition(0,0)
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
   // Open the DevTools.
@@ -34,17 +35,18 @@ app.setLoginItemSettings({
 })
 
 
-app.whenReady().then(() => {
-  createWindow();
-  app.dock.hide()
-  // Prevent the application from showing up as a recent application in Ubuntu dock
-  // app.setUserTasks([]);
-});
+// app.whenReady().then(() => {
+//   createWindow();
+//   // app.dock.setIcon(null);
+//   // app.dock.hide()
+//   // Prevent the application from showing up as a recent application in Ubuntu dock
+//   // app.setUserTasks([]);
+// });
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-// app.on('ready', createWindow);
+app.on('ready', createWindow);
 
 // Quit when all windows are closed, except on macOS. There, it's common
 // for applications and their menu bar to stay active until the user quits
