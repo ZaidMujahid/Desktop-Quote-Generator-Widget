@@ -9,13 +9,13 @@ if (require('electron-squirrel-startup')) {
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    type: 'menu',
+    type: 'menu',//for ubuntu based system to hide the application from the taskbar/dock
     width: 500,
     height: 250,
     frame: false,
     transparent: true,
     autoHideMenuBar: true,
-    skipTaskbar: true,
+    skipTaskbar: true,//for windows this alone will work without type:menu
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
     },
